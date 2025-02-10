@@ -133,15 +133,11 @@ class CartItemViewSet(viewsets.ModelViewSet):
         return Response(serializer.data, status = status.HTTP_201_CREATED) 
     @action(detail=False, methods=['DELETE'], url_path='delete_all', url_name='delete-all')
     def delete_all(self, request):
-        user_cart = get_object_or_404(Cart, user=request.user)# Delete all cart items for the current user's cart
-        user_cart.cart_items.all().delete()
+        user_cart = get_object_or_404(Cart, user=request.user)
+        user_cart.cart_items.all().delete() # Delete all cart items for the current user's cart
         return Response(status=status.HTTP_204_NO_CONTENT)
     
     
-
-    
-
-
 @api_view(['GET', 'POST'])
 @permission_classes([IsManager])
 def managers(request, pk =  None):
@@ -185,7 +181,6 @@ def remove_manager(request, id):
     return Response({'message':'user removed from the Managers '}, status = status.HTTP_204_NO_CONTENT) 
 
         
-
 @api_view(['GET', 'POST'])
 @permission_classes([IsManager])
 def delivery_crew(request):
