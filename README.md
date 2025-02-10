@@ -1,10 +1,11 @@
-to run this repository: $ cd Django-Restframework-API-Project \n
-$ pipenv shell   \n
-$pipenv install \n
-$python manage.py runserver \n
+to run this repository: 
+$ cd Django-Restframework-API-Project                                                                                                                                                                        
+$ pipenv shell                                                                                                                                                                                              
+$pipenv install 
+$python manage.py runserver                                                                                                                                                                                   
 
-/***********************************
-admin-user: {'uername':admin,'password': lemon123@}
+/**************************************************************************************************************************************                                                                                                     
+admin-user: {'uername':admin,'password': lemon123@}                                                                                                                                                                
 
-/*******************************************
-enjoy!!
+/******************************************************************************************************************************************************
+enjoy!!                                                                                                                                            
