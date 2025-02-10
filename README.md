@@ -2,7 +2,7 @@
 
 to run this repository: 
 $ cd Django-Restframework-API-Project                                                                                                                                                                        
-$ pipenv shell                                                                                                                                                                                              
+$ pipenv shell                                                                                                                                                                                                                                                                                         
 $pipenv install 
 $python manage.py runserver                                                                                                                                                                                   
 
