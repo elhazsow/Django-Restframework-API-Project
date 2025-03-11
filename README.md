@@ -16,9 +16,6 @@ $pipenv install
 ```
 $python manage.py runserver
 ````                                                                                                                                                                                 
-
-/******************************************************************************                                                                                                    
-admin-user: {'uername':admin,'password': lemon123@}                                                                                                                                                                
-
-/*******************************************************************************
+                                                                                                 
+**admin-user**: {'uername':admin,'password': lemon123@}                                                                                                                                                                
 ## enjoy!! ##                                                                                                                                       
