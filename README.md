@@ -2,6 +2,9 @@
 
 to run this repository:
 ```
+$ git clone https://github.com/elhazsow/Django-Restframework-API-Project.git
+```
+```
 $ cd Django-Restframework-API-Project   
 ```
 ```                                                                                                                                                                  
