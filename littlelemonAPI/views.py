@@ -60,7 +60,7 @@ class OrderViewSet(viewsets.ModelViewSet):
     
     def get_serializer_class(self):
         if self.request.user.groups.filter(name = 'Delivery-crew').exists():
-            return OrderDelivererSerializer
+            return OrderDelivererSerializer # the delivery can only update the status field
         else:
             return super().get_serializer_class()
     
