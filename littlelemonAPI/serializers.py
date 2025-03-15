@@ -60,7 +60,7 @@ class OrderSerializer(serializers.ModelSerializer):
         fields = ['id', 'user', 'delivery_crew', 'status', 'total', 'date', 'order_items']
         read_only_fields = ['user', 'date']
         
-class OrderDelivererSerializer(serializers.ModelSerializer):
+class OrderDelivererSerializer(serializers.ModelSerializer):  # to allow the deliverer to update only one field: the status one
     order_items = OrderItemSerializer(many=True, read_only=True)
     user= UserOrderSerializer(read_only=True)
     class Meta:
